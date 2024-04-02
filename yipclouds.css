@@ -1,0 +1,197 @@
+/* Copyrighted font by Jolicia Type under https://www.fontspring.com/licenses/jolicia-type/webfont */
+
+/*basics*/
+
+@font-face {
+  font-family: "hippie_mods";
+  src: url("fonts/hippie_mods-webfont.woff2") format("woff2"),
+    url("fonts/hippie_mods-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #D8D1CB;
+  ;
+  font-family: Heebo, sans-serif;
+  text-align: center;
+  color: #2E2B26;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+img {
+  border-radius: 1vh;
+  width: 45%
+}
+
+h1,
+h2 {
+  font-family: "hippie_mods", serif;
+  color: #8F7763;
+}
+
+h3 {
+  font-family: "hippie_mods", serif;
+  color: #7A89CA
+}
+
+h1,
+h2,
+h3,
+ul,
+.below {
+  margin: 10%;
+}
+
+/*links*/
+
+a:link,
+a:visited {
+  color: #8F7763
+}
+
+a:hover {
+  color: #7A89CA
+}
+
+a:active {
+  color: #2E2B26
+}
+
+/*special*/
+
+.banner-img {
+  border-radius: 0;
+  width: 100%;
+}
+
+.banner-txt {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5% 0;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border-radius: 2vh;
+  background-color: #8F7763;
+  font-family: "hippie_mods", serif;
+
+}
+
+.button:hover {
+  background-color: #7A89CA
+}
+
+
+.cards-container,
+.cards-container-landscape {
+  background-color: #BFB1A4;
+  display: flex;
+}
+
+
+.card-item {
+  border-radius: 2vh;
+  background-color: #D8D1CB;
+  font-size: small;
+  padding: 5%;
+  margin: 5% 0% 10% 0%;
+}
+
+
+.column {
+  width: 70%;
+  padding: 5% 2.5% 5% 5%;
+  box-sizing: border-box;
+}
+
+.right-column {
+  width: 70%;
+  padding: 5% 5% 5% 2.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+
+
+.column img,
+.right-column img {
+  width: 70%;
+}
+
+/*responsive*/
+
+@media (max-width: 620px) {
+  .banner-landscape {
+    display: none
+  }
+
+  .cards-container-landscape {
+    display: none
+  }
+}
+
+@media (min-width: 620px) {
+  img {
+    width: 30%
+  }
+
+  .banner {
+    display: none
+  }
+
+  .cards-container {
+    display: none
+  }
+
+  .cards-container-landscape {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    place-items: center;
+  }
+
+  .column {
+    flex: 20%;
+    box-sizing: border-box;
+    padding: 2.5% 2.5%;
+  }
+
+  .below img {
+    margin: 2.5%
+  }
+}
+
+@media (min-width: 960px) {
+  .cards-container-landscape {
+    padding: 0 15%;
+  }
+
+  h1,
+  h2,
+  h3,
+  ul,
+  .below {
+    margin: 7.5% 10%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .cards-container-landscape {
+    padding: 0 20%
+  }
+}
